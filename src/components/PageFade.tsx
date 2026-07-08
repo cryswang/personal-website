@@ -8,7 +8,7 @@ export function PageFade({ children }: { children: ReactNode }) {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -12 }}
       transition={{ duration: 0.35, ease: 'easeOut' }}
-      className="flex-1 flex flex-col items-center justify-center gap-12 px-6"
+      className="flex-1 flex flex-col items-center justify-center gap-12 px-6 pb-28"
     >
       {children}
     </motion.div>

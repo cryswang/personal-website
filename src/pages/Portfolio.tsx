@@ -1,32 +1,39 @@
-import { motion } from 'motion/react'
 import { PageFade } from '../components/PageFade'
+import { Project } from '../components/Project'
 
 const projects = [
-  { title: 'Project One', description: 'A short description goes here.' },
-  { title: 'Project Two', description: 'A short description goes here.' },
-  { title: 'Project Three', description: 'A short description goes here.' },
+  {
+    title: 'responsive widget for custom price alerts',
+    caption: "hey there. I'm crystal. blah blah blah lorem ipsum",
+    image: <div className="h-full w-full bg-secondary" />,
+  },
+  {
+    title: 'placeholder title for project two',
+    caption: "hey there. I'm crystal. blah blah blah lorem ipsum",
+    image: <div className="h-full w-full bg-secondary" />,
+  },
+  {
+    title: 'placeholder title for project three',
+    caption: "hey there. I'm crystal. blah blah blah lorem ipsum",
+    image: <div className="h-full w-full bg-secondary" />,
+  },
 ]
 
 export function Portfolio() {
   return (
     <PageFade>
-      <h1 className="text-4xl font-semibold">Portfolio</h1>
+      <h1 className="mt-24 text-4xl font-semibold">portfolio</h1>
 
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 w-full max-w-4xl">
+      <div className="flex w-full max-w-4xl flex-col gap-16 pb-24">
         {projects.map((project, i) => (
-          <motion.div
+          <Project
             key={project.title}
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: i * 0.1 }}
-            whileHover={{ y: -6 }}
-            className="rounded-2xl border border-neutral-200 p-6 text-left"
-          >
-            <h2 className="text-lg font-medium mb-2">{project.title}</h2>
-            <p className="text-sm text-neutral-600">
-              {project.description}
-            </p>
-          </motion.div>
+            title={project.title}
+            caption={project.caption}
+            reverse={i % 2 === 1}
+            onHover
+            image={project.image}
+          />
         ))}
       </div>
     </PageFade>

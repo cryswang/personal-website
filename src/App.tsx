@@ -17,7 +17,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </AnimatePresence>
-      <div className="pt-6 pb-9">
+      <div className="fixed inset-x-0 bottom-9 flex justify-center">
         <NavBar />
       </div>
     </div>
