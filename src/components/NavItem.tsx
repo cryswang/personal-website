@@ -18,7 +18,7 @@ export function NavItem({
             className={
               isActive
                 ? 'relative z-10 text-background'
-                : 'relative z-10 text-neutral-600'
+                : 'relative z-10 text-neutral-600 transition-colors hover:text-secondary'
             }
           >
             {label}
