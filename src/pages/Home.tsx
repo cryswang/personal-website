@@ -1,15 +1,35 @@
 import { PageFade } from '../components/PageFade'
 import { InfoCard } from '../components/InfoCard'
-import { LoadMoreButton } from '../components/LoadMoreButton'
+import mascot from '../assets/mascot.png'
+
+const messages = {
+  about1: 'Placeholder text for about card one.',
+  about2: 'Placeholder text for about card two.',
+  credit: 'Placeholder text for the credit card.',
+}
 
 export function Home() {
   return (
     <PageFade>
-      <h1 className="text-4xl font-semibold">portfolio</h1>
+      <div className="relative w-[clamp(360px,58vw,620px)] aspect-[620/680]">
+        <div className="absolute top-[18%] left-[58%] z-[1]">
+          <InfoCard description={messages.about1} followsCursor capturesCursor />
+        </div>
 
-      <LoadMoreButton text="> Load more <" floatAnimation />
+        <img
+          src={mascot}
+          alt="Mascot illustration"
+          className="absolute top-1/2 left-1/2 z-[2] w-[clamp(260px,45vw,431px)] -translate-x-1/2 -translate-y-1/2"
+        />
 
-      <InfoCard description="Moves with your cursor" followsCursor capturesCursor />
+        <div className="absolute top-[50%] left-[8%] z-[3]">
+          <InfoCard description={messages.about2} followsCursor capturesCursor />
+        </div>
+
+        <div className="absolute top-[74%] left-[44%] z-[4]">
+          <InfoCard description={messages.credit} followsCursor capturesCursor />
+        </div>
+      </div>
     </PageFade>
   )
 }
