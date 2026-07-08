@@ -1,9 +1,9 @@
 import { NavItem } from './NavItem'
 
 const links = [
-  { to: '/', label: 'Home', end: true },
-  { to: '/portfolio', label: 'Portfolio', end: false },
-  { to: '/contact', label: 'Contact', end: false },
+  { to: '/', label: 'home', end: true },
+  { to: '/portfolio', label: 'portfolio', end: false },
+  { to: '/contact', label: 'contact', end: false },
 ]
 
 export function NavBar() {
