@@ -1,0 +1,41 @@
+@import "tailwindcss";
+@import "@fontsource/intel-one-mono/300.css";
+@import "@fontsource/intel-one-mono/400.css";
+@import "@fontsource/intel-one-mono/500.css";
+@import "@fontsource/intel-one-mono/600.css";
+
+@theme {
+  --color-accent: #fff6e8;
+  --color-foreground: #2b2b2b;
+  --color-background: #fefefe;
+  --color-secondary: #d2d6db;
+  --font-mono: 'Intel One Mono', ui-monospace, monospace;
+}
+
+html {
+  scrollbar-gutter: stable;
+}
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 300;
+  background-color: var(--color-background);
+  background-image: radial-gradient(
+    circle,
+    var(--color-secondary) 1.5px,
+    transparent 1.5px
+  );
+  background-size: 16px 16px;
+  color: var(--color-foreground);
+}
+
+button,
+a {
+  cursor: pointer;
+}
