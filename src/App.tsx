@@ -1,6 +1,7 @@
 import { Route, Routes, useLocation } from 'react-router-dom'
 import { AnimatePresence } from 'motion/react'
 import { NavBar } from './components/NavBar'
+import { ScrollToTopButton } from './components/ScrollToTopButton'
 import { Home } from './pages/Home'
 import { Portfolio } from './pages/Portfolio'
 import { Contact } from './pages/Contact'
@@ -17,9 +18,10 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </AnimatePresence>
-      <div className="fixed inset-x-0 bottom-9 flex justify-center">
+      <div className="fixed inset-x-0 bottom-9 z-[999] flex justify-center">
         <NavBar />
       </div>
+      <ScrollToTopButton />
     </div>
   )
 }

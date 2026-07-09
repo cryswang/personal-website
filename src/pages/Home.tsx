@@ -25,7 +25,7 @@ export function Home() {
         <img
           src={mascot}
           alt="Mascot illustration"
-          className="absolute top-1/2 left-1/2 z-[2] w-[clamp(260px,45vw,431px)] -translate-x-1/2 -translate-y-1/2"
+          className="pointer-events-none absolute top-1/2 left-1/2 z-[2] w-[clamp(260px,45vw,431px)] -translate-x-1/2 -translate-y-1/2"
         />
 
         <div className="absolute top-[50%] left-[8%] z-[3]">
