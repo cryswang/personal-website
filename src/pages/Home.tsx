@@ -3,7 +3,7 @@ import { InfoCard } from '../components/InfoCard'
 import mascot from '../assets/mascot.png'
 
 const messages = {
-  about1: "hey! i'm crystal, a frontend engineer at coinbase based in nyc.",
+  about1: "hey! i'm crystal, a frontend engineer at coinbase in nyc.",
   about2:
     'i like to build in react/react native and do some light prototyping on figma. my other hobby is playing video games. all of them.',
   credit: 'art by chatgpt (for now--stay tuned)',
