@@ -7,11 +7,13 @@ export function InfoCard({
   description,
   followsCursor = false,
   capturesCursor = false,
+  followStrength,
   className,
 }: {
   description: string | ReactElement
   followsCursor?: boolean
   capturesCursor?: boolean
+  followStrength?: number
   className?: string
 }) {
   let content = (
@@ -30,7 +32,9 @@ export function InfoCard({
   }
 
   if (followsCursor) {
-    content = <CursorFollow>{content}</CursorFollow>
+    content = (
+      <CursorFollow strength={followStrength}>{content}</CursorFollow>
+    )
   }
 
   return content

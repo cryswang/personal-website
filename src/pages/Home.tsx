@@ -13,7 +13,12 @@ export function Home() {
     <PageFade>
       <div className="relative w-[clamp(360px,58vw,620px)] aspect-[620/680]">
         <div className="absolute top-[18%] left-[58%] z-[1]">
-          <InfoCard description={messages.about1} followsCursor capturesCursor />
+          <InfoCard
+            description={messages.about1}
+            followsCursor
+            followStrength={6}
+            capturesCursor
+          />
         </div>
 
         <img
@@ -23,11 +28,21 @@ export function Home() {
         />
 
         <div className="absolute top-[50%] left-[8%] z-[3]">
-          <InfoCard description={messages.about2} followsCursor capturesCursor />
+          <InfoCard
+            description={messages.about2}
+            followsCursor
+            followStrength={36}
+            capturesCursor
+          />
         </div>
 
         <div className="absolute top-[74%] left-[44%] z-[4]">
-          <InfoCard description={messages.credit} followsCursor capturesCursor />
+          <InfoCard
+            description={messages.credit}
+            followsCursor
+            followStrength={18}
+            capturesCursor
+          />
         </div>
       </div>
     </PageFade>
