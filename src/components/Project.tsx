@@ -26,7 +26,10 @@ export function Project({
           reverse && 'flex-row-reverse',
         )}
       >
-        <InfoCard description={caption} />
+        <InfoCard
+          description={caption}
+          className={cn('relative z-10 -mt-8', reverse ? 'mr-6' : 'ml-6')}
+        />
         <p className="text-[16px] font-semibold text-foreground">{title}</p>
       </div>
     </div>
