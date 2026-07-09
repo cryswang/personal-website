@@ -23,7 +23,7 @@ const BOUNCE_SPRING: Transition = {
 export function CursorCapture({
   children,
   className,
-  strength = 36,
+  strength = 30,
 }: {
   children: ReactNode
   className?: string

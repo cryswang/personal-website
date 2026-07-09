@@ -12,12 +12,13 @@ export function Home() {
   return (
     <PageFade>
       <div className="relative w-[clamp(360px,58vw,620px)] aspect-[620/680]">
-        <div className="absolute top-[18%] left-[58%] z-[1]">
+        <div className="absolute top-[10%] left-[64%] z-[1]">
           <InfoCard
             description={messages.about1}
             followsCursor
             followStrength={6}
             capturesCursor
+            className="shadow-none"
           />
         </div>
 
