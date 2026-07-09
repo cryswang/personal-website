@@ -3,9 +3,10 @@ import { InfoCard } from '../components/InfoCard'
 import mascot from '../assets/mascot.png'
 
 const messages = {
-  about1: 'Placeholder text for about card one.',
-  about2: 'Placeholder text for about card two.',
-  credit: 'Placeholder text for the credit card.',
+  about1: "hey! i'm crystal, a frontend engineer at coinbase based in nyc.",
+  about2:
+    'i like to build in react/react native and do some light prototyping on figma. my other hobby is playing video games. all of them.',
+  credit: 'art by chatgpt (for now--stay tuned)',
 }
 
 export function Home() {
@@ -28,7 +29,7 @@ export function Home() {
           className="pointer-events-none absolute top-1/2 left-1/2 z-[2] w-[clamp(260px,45vw,431px)] -translate-x-1/2 -translate-y-1/2"
         />
 
-        <div className="absolute top-[50%] left-[8%] z-[3]">
+        <div className="absolute top-[46%] left-[2%] z-[3]">
           <InfoCard
             description={messages.about2}
             followsCursor
@@ -37,7 +38,7 @@ export function Home() {
           />
         </div>
 
-        <div className="absolute top-[74%] left-[44%] z-[4]">
+        <div className="absolute top-[74%] left-[50%] z-[4]">
           <InfoCard
             description={messages.credit}
             followsCursor
